@@ -7,9 +7,9 @@ import com.github.stefvanschie.inventoryframework.pane.StaticPane;
 import com.github.stefvanschie.inventoryframework.pane.util.Slot;
 import org.bukkit.entity.Player;
 
-public class GroupCreationGUI {
+public class GroupsGUI {
     public static void openGUI(Player player) {
-        ChestGui gui = new ChestGui(4, "Create a Group");
+        ChestGui gui = new ChestGui(4, "Groups");
 
         StaticPane options = new StaticPane(1, 1, Pane.Priority.HIGHEST);
 

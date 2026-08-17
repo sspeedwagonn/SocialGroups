@@ -7,11 +7,13 @@ plugins {
 repositories {
     mavenCentral()
     maven("https://repo.papermc.io/repository/maven-public/")
+    maven("https://repo.aikar.co/content/groups/aikar/")
 }
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:26.2.build.+")
     implementation("com.github.stefvanschie.inventoryframework:IF:0.12.0")
+    implementation("co.aikar:acf-paper:0.5.1-SNAPSHOT")
 }
 
 java {
@@ -20,6 +22,8 @@ java {
 
 tasks.shadowJar {
     relocate("com.github.stefvanschie.inventoryframework", "net.civicraft.inventoryframework")
+    relocate("co.aikar.commands", "net.civicraft.acf")
+    relocate("co.aikar.locales", "net.civicraft.locales")
 }
 
 tasks {
