@@ -1,0 +1,6 @@
+name: SocialGroups
+version: '${version}'
+
+main: net.civicraft.socialGroups.SocialGroups
+api-version: '26.2'
+load: POSTWORLD
